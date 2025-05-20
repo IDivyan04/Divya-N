@@ -1,0 +1,39 @@
+storage=[]
+n=int(input("enter the number of items:"))
+for i in range(n):
+    item=str(input("enter the items:"))
+    storage.append(item)
+print(storage)
+item=str(input("enter the item customer buys and delivered:"))
+if item in storage:
+    storage.remove(item)
+else:
+    print("item not available")
+print(storage)
+item=str(input("enter the extra item to append :"))
+storage.append(item)
+print(str(storage))
+
+
+class student:
+    def _init_(self,name,id):
+        self.name=name
+        self.id=id
+    def greet(name,id):
+        print("HELLO, "+name+" !")
+if _name=="main_":
+    name=input("what is your name:")
+    id=int(input("enter ur registration id :"))
+    student.greet(name,id)
+
+
+class Person:
+    def owner(item):
+        print(item)
+if _name=="main_":
+    p=str(input("wts a owner name ?"))
+    if p=="anesh":
+        Person.owner(p)
+        print(f"{p} is itself a owner")
+    else:
+        print(f"{p} is not a owner")
